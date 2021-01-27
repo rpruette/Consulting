@@ -139,7 +139,7 @@ server <- function(input, output) {
             filter(Repeat %in% repeat.graph) %>%
             filter(sex %in% sex.graph) %>%
             filter(age_num_years %[]% input$age)
-        ggmap::register_google(key = "AIzaSyD4cZ61AGLNQ-BELA--YHFX261Sq_hzuUg") 
+        ggmap::register_google(key = "") 
         
         if(input$zipcode == "All zip codes"){
             center <- "dallas tx"
